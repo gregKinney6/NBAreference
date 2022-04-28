@@ -284,6 +284,10 @@ def open_win_compstats():
     team2text.place(x=1600, y=620)
     def close():
         new2.destroy()
+        global abc   #added for multiusage after entering to the program this variables should be reset 
+        global abc1
+        abc=""
+        abc1=""
     #    # new2.quit()
 
     Button(new2, text= "Close the Window",bg='yellow',fg='red', font=("Calibri",16,"bold"),relief=RAISED, command=close).place(x=1680,y=1015)
